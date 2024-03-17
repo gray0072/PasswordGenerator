@@ -22,8 +22,9 @@ export default function PasswordForm() {
   const [passwords, setPasswords] = useState<string[]>([])
 
   const passwordsCount = 5;
-  const lowerCaseSymbols: string[] = 'abcdef'.split('');
-  const upperCaseSymbols: string[] = 'ABCDEF'.split('');
+  // [...new Array(26)].map((x,index) => String.fromCharCode('a'.charCodeAt(0)+index)).join('')  
+  const lowerCaseSymbols: string[] = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  const upperCaseSymbols: string[] = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   const digitSymbols: string[] = '0123456789'.split('');
   const specialSymbols: string[] = '!@#$%^&*()_+=-|\\/{}[]<>'.split('');
 
